@@ -9,13 +9,13 @@ public class my_main {
                 System.out.print(nums[i][n]+" ");
             }
         }
-        int min=nums[0][0];
+        int a=nums[0][0];
         for(int i =0;i<nums.length;i++){
             for(int n=0;n<nums[i].length;n++){
-                if(nums[i][n]>min)min=nums[i][n];
+                if(nums[i][n]>a)a=nums[i][n];
             }
         }
         System.out.println(" ");
-        System.out.println("Значение максимального элемента массива = "+min);
+        System.out.println("Значение максимального элемента массива "+a);
     }
 }
