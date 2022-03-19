@@ -8,11 +8,12 @@ public class my_main {
                 nums[i][n]=(int)((Math.random()*199)-99);
                 System.out.print(nums[i][n]+" ");
             }
+            System.out.println();
         }
         int a=nums[0][0];
-        for(int i =0;i<nums.length;i++){
-            for(int n=0;n<nums[i].length;n++){
-                if(nums[i][n]>a)a=nums[i][n];
+        for (int[] num : nums) {
+            for (int n = 0; n < num.length; n++) {
+                if (num[n] > a) a = num[n];
             }
         }
         System.out.println(" ");
